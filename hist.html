@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Future Display</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+	<style>
+		* {font-family: 'Noto Sans JP', sans-serif;}
+		header, footer {max-width: 97vw;}
+		header {position: fixed; top: 0; width: 97vw; z-index: 1000; background: #fff;}
+		header p {float: left; font-size: 150%;}
+		header nav {display: flex; float: right;}
+		header nav a {width: 80px; padding: 15px; text-decoration: none; color: #333; transition: .25s; text-align: center;}
+		header nav a:hover {font-weight: 900; border-bottom: 2px solid #cadff0;}
+		body {display: flex; flex-flow: column; min-height: 97vh;}
+		main {flex: 1; margin-top: 3em;}
+		.spacer {height: 8em;}
+		footer {background: #c4d2db; max-width: 100%;}
+		footer p {text-align: center;}
+		h3 {font-family: BIZ UDGothic, Yu Gothic, sans-serif; border-bottom: 2px solid #444; margin: 1em auto;}
+		table {width: 94%; margin: 1em auto;}
+		table th {background: #c4d2db; font-weight: 900; text-align: center;}
+		table td {background: #cadff0; padding: 1em;}
+		@media screen and (max-width: 790px) {
+		  table {
+		    width: 89%;
+		    float: left;
+		    margin-bottom: 1em;
+		    border-spacing: 1em;
+		  }
+		  table tr:first-child {
+		    display: none;
+		  }
+		  table tr {
+		    width: 100%;
+		  }
+		  table td {
+		    display: block;
+		    text-align: center;
+		    width: 100%;
+		    margin: 1px;
+		  }
+		  table td:first-child {
+		    background: #cadff0;
+		    color: #333;
+		    font-weight: bold;
+		    text-align: center;
+		  }
+		  table td:before {
+		    content: attr(data-label);
+		    float: left;
+		    font-weight: bold;
+		    margin-right: 10px;
+		  }
+		}
+	</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152790439-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152790439-10');
+</script>
+
+
+</head>
+<body>
+<header>
+	<p>Future Display</p>
+	<nav>
+		<a href="index.html#info"><span>INFO</span></a>
+		<a href="index.html#idea"><span>IDEA</span></a>
+		<a href="index.html#about"><span>ABOUT</span></a>
+	</nav>
+</header>
+<main>
+	<div id="hist" class="spacer"></div>
+	<section class="hist">
+		<h3>メディア小史</h3>
+		<article>
+			<table>
+				<tr>
+					<th>メディア</th>
+					<th>需要</th>
+					<th>供給</th>
+					<th>制作</th>
+					<th>情報</th>
+					<th>道具</th>
+					<th>文化</th>
+				</tr>
+				<tr>
+					<td data-label="メディア">紙</td>
+					<td data-label="需要">「見えるように残したい」</td>
+					<td data-label="供給">one</td>
+					<td data-label="制作">ひとつずつ手で作る</td>
+					<td data-label="情報">筆記・印刷</td>
+					<td data-label="道具">ペン</td>
+					<td data-label="文化">本・新聞・マンガ</td>
+				</tr>
+				<tr>
+					<td data-label="メディア">テレビ</td>
+					<td data-label="需要">「多くの人に知らせたい」</td>
+					<td data-label="供給">many</td>
+					<td data-label="制作">大量に同じものを</td>
+					<td data-label="情報">録画・再生</td>
+					<td data-label="道具">DVD</td>
+					<td data-label="文化">放送・アニメ・ゲーム</td>
+				</tr>
+				<tr>
+					<td data-label="メディア">PC</td>
+					<td data-label="需要">「自分で作りたい」</td>
+					<td data-label="供給">every</td>
+					<td data-label="制作">なんでもつくれる</td>
+					<td data-label="情報">コピー・貼り付け</td>
+					<td data-label="道具">ブラウザ</td>
+					<td data-label="文化">ソフト・Web・メール</td>
+				</tr>
+				<tr>
+					<td data-label="メディア">モバイル</td>
+					<td data-label="需要">「小さく、軽く」</td>
+					<td data-label="供給">any</td>
+					<td data-label="制作">いつでもどこでも誰とでも</td>
+					<td data-label="情報">送信・共有</td>
+					<td data-label="道具">アプリ</td>
+					<td data-label="文化">SNS・ブログ・動画</td>
+				</tr>
+				<tr>
+					<td data-label="メディア">ディスプレイ</td>
+					<td data-label="需要">「遠くから操作」</td>
+					<td data-label="供給">some</td>
+					<td data-label="制作">いくつかの場所で</td>
+					<td data-label="情報">同期・更新</td>
+					<td data-label="道具">ボタン電池</td>
+					<td data-label="文化">IoT・VR・AI</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+</main>
+<footer>
+	<p>&copy; Future Display</p>
+</footer>
+</body>
+</html>

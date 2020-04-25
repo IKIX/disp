@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Future Display</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+	<style>
+		* {font-family: 'Noto Sans JP', sans-serif;}
+		header, footer {max-width: 97vw;}
+		header {position: fixed; top: 0; width: 97vw; z-index: 1000; background: #fff;}
+		header p {float: left; font-size: 150%;}
+		header nav {display: flex; float: right;}
+		a {text-decoration: none; color: #333; transition: .25s;}
+		header nav a {width: 80px; padding: 15px; text-align: center;}
+		header nav a:hover {font-weight: 900; border-bottom: 2px solid #cadff0;}
+		body {display: flex; flex-flow: column; min-height: 97vh;}
+		main {flex: 1; margin-top: 3em;}
+		.spacer {height: 8em;}
+		footer {background: #c4d2db; max-width: 100%;}
+		footer p {text-align: center;}
+		.info {display: flex;}
+		.info a {background: #cadff0; padding: 1em; margin: .5em;}
+		.info a:hover {background: #c4d2db;}
+		.info a:first-child {background: #fff; pointer-events: none;}
+		h3 {font-family: BIZ UDGothic, Yu Gothic, sans-serif; border-bottom: 2px solid #444; margin: 1em auto;}
+		.kwsk {text-align: right;}
+		.idea div {display: flex; flex-wrap: wrap;}
+		li {list-style-type: none;}
+		.idea div li {padding: 1em; width: 200px;}
+		.about ol {margin: .5em auto; background: #cadff0; padding: 1em 2em; max-width: 26em;}
+		.about article {padding: 0 1em;}
+		ol li {list-style-type: decimal; padding: .5em;}
+		strong {border-bottom: 1px solid #444;}
+		.name {padding: 1em; float: right; text-align: right;}
+		.hc {display: flex; justify-content: center; align-items: center;}
+		.hc div {display: flex; flex-direction: column;}
+		.hc div div{width: 20vw; height: auto; background: #cadff0; margin:2px; transition: .5s; text-align: center; padding: 1em; display: flex; flex-direction: column;}
+		.hc div div:hover{background: #cadff0;}
+		.hc div div p {text-align: left;}
+		@media screen and (max-width: 790px) {
+			.info {flex-direction: column;}
+			.info article {max-width: 90vw;}
+			.hc {flex-direction: column; align-items: stretch;}
+			.hc div {flex-direction: row;}
+			.hc div div {width: 90%;}
+			.hc div div p {font-size: 90%;}
+		}
+	</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152790439-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152790439-10');
+</script>
+
+
+</head>
+<body>
+<header>
+	<p>Future Display</p>
+	<nav>
+		<a href="#info"><span>INFO</span></a>
+		<a href="#idea"><span>IDEA</span></a>
+		<a href="#about"><span>ABOUT</span></a>
+	</nav>
+</header>
+<main>
+	<div id="info" class="spacer"></div>
+	<section class="info">
+		<a>
+			<h3>お知らせ</h3>
+			<p>2018-11-27 JDIの株式を買い増し</p>
+			<p>2018-11-22 JDIのイベントに参加</p>
+			<p>2018-11-15 ホームページを公開</p>
+		</a>
+		<a href="medium.html">
+			<h3>テクノロジーがメディアを刺激する</h3>
+			<p>ディスプレイがクリエイティブな表現を開拓し、新時代のコンテンツを生み出す。</p>
+			<p class="kwsk">→ 詳細</p>
+		</a>
+		<a href="hist.html">
+			<h3>ディスプレイの未来を考える</h3>
+			<p>紙・テレビ・PC・モバイルにとって代わる第5のメディアへ。</p>
+			<p class="kwsk">→ 詳細</p>
+		</a>
+	</section>
+	<div id="idea" class="spacer"></div>
+	<section class="idea">
+		<article>
+			<h3>ディスプレイであふれる未来</h3>
+			<div class="hc">
+				<div>
+					<div><strong>液晶カード</strong>
+						<p>指紋認証で個人情報を自分だけ見られる</p>
+					</div>
+					<div><strong>自炊機</strong>
+						<p>パタッと置いてPDF、スキャナいらずの暗記液晶</p>
+					</div>
+				</div>
+				<div>
+					<div><strong>電子レジュメ</strong>
+						<p>各自に配付、画面同期で会議の形態を変える</p>
+					</div>
+					<div><strong>ホームサイネージ</strong>
+						<p>プリンタ、ラミネータ、プロジェクタはもういらない</p>
+					</div>
+					<div><strong>ウェブキャンバス</strong>
+						<p>電子工作用ウェブキャンバス、閲覧も自在</p>
+					</div>
+				</div>
+				<div>
+					<div><strong>隠蔽板</strong>
+						<p>開かずに中を確認、透明庫をコンテンツで隠す</p>
+					</div>
+					<div><strong>波長管理</strong>
+						<p>コンテンツを記憶に残りやすくするディスプレイ</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<div id="about" class="spacer"></div>
+	<section class="about">
+		<h3>Future Displayについて</h3>
+		<article>
+			<p>ディスプレイの国内市場は厳しい状況が続いています。PC・スマホ・タブレット・テレビはすっかり普及したことで供給は飽和し、有機ELにシェアを奪われています。しかし、新しい市場を確実にするアイデアは、ディスプレイにはまだまだ隠れています。私は次の3点をディスプレイの応用3原理と呼んでいます。</p>
+			<ol>
+				<li><strong>面＝ディスプレイ</strong><br>面はすべてディスプレイが置ける空間である</li>
+				<li><strong>動/静シームレス</strong><br>ディスプレイに映すコンテンツは動静の区別がない</li>
+				<li><strong>更新・同期のIoT</strong><br>ディスプレイは情報を更新し、通信できる</li>
+			</ol>
+			<p>ウェブとつながったディスプレイは、コンテンツをウェブの言語で作れる。ディスプレイの需要はアイデアで開拓できると信じています。</p>
+			<p class="name">Future Display 代表<br>Toshiki Takahashi<br>E-mail: work at potaro.org</p>
+		</article>
+	</section>
+</main>
+<footer>
+	<p>&copy; Future Display</p>
+</footer>
+</body>
+</html>
